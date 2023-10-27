@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+    column-gap: 20px;
+}
+
+.card {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 0.5;
+    cursor: pointer;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    transition-property: flex;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+}
+
+.card-01 {
+    background-image: url('./assets/explore-the-world.avif');
+}
+
+.card-02 {
+    background-image: url('./assets/wild-forest.avif');
+}
+
+.card-03 {
+    background-image: url('./assets/sunny-beach.avif');
+}
+
+.card-04 {
+    background-image: url('./assets/city-on-winter.avif');
+}
+
+.card-05 {
+    background-image: url('./assets/mountains-clouds.avif');
+}
+
+.title {
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    bottom: 6px;
+    display: none;
+}
+
+.card-active {
+    flex: 5;
+}
+
+.card-active .title {
+    display: block;
+}
